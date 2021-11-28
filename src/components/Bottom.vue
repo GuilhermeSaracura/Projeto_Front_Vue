@@ -27,7 +27,7 @@ export default {
     draweritens: [
       {
         title:"Home",
-        url:"/Home",
+        url:"/",
       },
       {
         title:"Dishes",

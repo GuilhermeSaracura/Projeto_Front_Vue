@@ -59,7 +59,7 @@ export default new Vuex.Store({
     name: "Suco de laranja com morango",
     type: "Juices",
     link:"https://melepimenta.com/suco-de-laranja-com-morango/",
-    description: "Essa é uma mistura saborosa dentre todas as receitas de sucos naturais, uma dica perfeita para quem procura algo diferente para beber. Para fazer esse suco, basta misturar o suco de laranja com morangos congelados e açúcar e bater tudo em um liquidificador. Fica uma delícia!",
+    description: "Essa é uma mistura saborosa dentre todas as receitas de sucos naturais, uma dica perfeita para quem procura algo diferente para beber. Para fazer esse suco, basta misturar o suco de laranja com morangos congelados e açúcar e bater tudo em um liquidificador.",
     image:"Sucolaranja.png"
     }
   ]},

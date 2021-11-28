@@ -55,7 +55,7 @@ export default {
     draweritens: [
       {
         title:"Home",
-        url:"/Home",
+        url:"/",
         icon:"mdi-home",
       },
       {
