@@ -4,26 +4,22 @@
       fixed
       color=#32CD32
       scroll-target="#scrolling-techniques">
+      
+      <v-icon left>mdi-food</v-icon>
+      <v-toolbar-title>Foods</v-toolbar-title>
+
       <v-spacer></v-spacer>
             <v-btn>
               <router-link to="/Home">Home</router-link>
             </v-btn>
-            
-      <v-spacer></v-spacer>
             <v-btn>
-              <router-link to="/About">About</router-link>
+              <router-link to="/Savory">Savory</router-link>
             </v-btn>
-            
-      <v-spacer></v-spacer>
             <v-btn>
-              <router-link to="/Description">Description</router-link>
+              <router-link to="/Candies">Candies</router-link>
             </v-btn>
-            
-      <v-spacer></v-spacer>
             <v-btn>
-              <router-link to="/Informations">Informations</router-link>
+              <router-link to="/Juice">Juice</router-link>
             </v-btn>
-            
-      <v-spacer></v-spacer>
     </v-app-bar>
 </template>

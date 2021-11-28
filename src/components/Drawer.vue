@@ -23,21 +23,59 @@
 
         <v-divider></v-divider>
 
-        <h3>Componentes:</h3>
-        <Components></Components>
+        <v-list>
+        <v-list-item-group v-model="selecteditem" color="green">
+          <v-list-item v-for="item in draweritens" :key="item.title" link @click="$router.push(item.url)">
+
+            <v-list-item-icon>
+              <v-icon>
+                {{ item.icon }}
+              </v-icon>
+            </v-list-item-icon>
+
+            <v-list-item-content>
+              <v-list-item-title v-text="item.title"></v-list-item-title>
+            </v-list-item-content>
+            
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
         
     </v-navigation-drawer>
 </template>
 
 <script>
-import Components from "@/components/Components"
 export default {
   name: 'Drawer',
+
   components:{
-    Components
   },
 
   data: () => ({
+    draweritens: [
+      {
+        title:"Home",
+        url:"/Home",
+        icon:"mdi-home",
+      },
+      {
+        title:"Savory",
+        url:"/Savory",
+        icon:"mdi-pizza",
+      },
+      {
+        title:"Candies",
+        url:"/Candies",
+        icon:"mdi-cake",
+      },
+      {
+        title:"Juice",
+        url:"/Juice",
+        icon:"mdi-water",
+      },
+    ],
+
+  selecteditem: 0,
   }),
 };
 </script>

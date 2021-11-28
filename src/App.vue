@@ -1,28 +1,16 @@
 <template>
   <v-app>
-    <v-system-bar
-        app
-        color=#008000
-        fixed
-      >
-        <v-spacer></v-spacer>
-        <v-icon>mdi-wifi-strength-4</v-icon>
-        <v-icon>mdi-signal-cellular-outline</v-icon>
-        <v-icon>mdi-battery</v-icon>
-        <span>23:59</span>
-  </v-system-bar>
 
-  <Appbar></Appbar>
-  <Drawer></Drawer>
+    <Systembar></Systembar>
+
+    <Appbar></Appbar>
+
+    <Drawer></Drawer>
   
     <v-main>
       <v-content>
          <div id="menu">
           <div id="nav">
-            <router-link to="/Home">Home</router-link> |
-            <router-link to="/About">About</router-link>|
-            <router-link to="/Description">Description</router-link>|
-            <router-link to="/Informations">Informations</router-link>
           </div>
           <router-view/>
         </div>
@@ -110,11 +98,13 @@
 <script>
 import Appbar from "@/components/Appbar"
 import Drawer from "@/components/Drawer"
+import Systembar from "@/components/Systembar"
 export default {
   name: 'App',
   components:{
     Appbar,
-    Drawer
+    Drawer,
+    Systembar
   },
 
   data: () => ({
@@ -122,30 +112,4 @@ export default {
 };
 </script>
 
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-#h2{
-    font-style: italic;
-    color: darkgreen;
-}
-</style>
 
