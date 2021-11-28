@@ -9,13 +9,10 @@
   
     <v-main>
       <v-content>
-         <div id="menu">
-          <div id="nav">
-          </div>
-          <router-view/>
-        </div>
+      <router-view></router-view>
       </v-content>
     </v-main>
+
      <v-footer
     app
     dark

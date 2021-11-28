@@ -1,10 +1,31 @@
 <template>
-    <h1>This is an Home Page</h1>
+    <v-row>
+      <v-col cols="12">
+        <h1 style="color:#32CD32">Home</h1>
+        <v-row>
+          <v-col v-for="food in foods" :key="food.name" cols="4">
+            <Modelcard :food="food"></Modelcard>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
 </template>
 
 <script>
+import Modelcard from "../components/Modelcard.vue";
 
-  export default {
+export default {
     name: 'Home',
-  }
+    components: {
+      Modelcard
+    },
+    computed: {
+      foods(){
+        return this.$store.state.foods;
+      },
+    },
+  };
 </script>
+
+<style>
+</style>
