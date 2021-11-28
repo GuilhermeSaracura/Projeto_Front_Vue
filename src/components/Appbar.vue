@@ -5,21 +5,51 @@
       color=#32CD32
       scroll-target="#scrolling-techniques">
       
-      <v-icon left>mdi-food</v-icon>
-      <v-toolbar-title>Foods</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-icon left>mdi-food-apple</v-icon>
+      <v-toolbar-title>Health Foods</v-toolbar-title>
 
       <v-spacer></v-spacer>
-            <v-btn>
-              <router-link to="/Home">Home</router-link>
+      <div v-for="item in draweritens" :key="item.title">
+            <v-btn @click="$router.push(item.url)">>
+              {{item.title}}
             </v-btn>
-            <v-btn>
-              <router-link to="/Savory">Savory</router-link>
-            </v-btn>
-            <v-btn>
-              <router-link to="/Candies">Candies</router-link>
-            </v-btn>
-            <v-btn>
-              <router-link to="/Juice">Juice</router-link>
-            </v-btn>
+      </div>
     </v-app-bar>
 </template>
+
+<script>
+export default {
+  name: 'Appbar',
+
+  components:{
+  },
+
+  data: () => ({
+    draweritens: [
+      {
+        title:"Home",
+        url:"/Home",
+        icon:"mdi-home",
+      },
+      {
+        title:"Savory",
+        url:"/Savory",
+        icon:"mdi-pizza",
+      },
+      {
+        title:"Candies",
+        url:"/Candies",
+        icon:"mdi-cake",
+      },
+      {
+        title:"Juice",
+        url:"/Juice",
+        icon:"mdi-water",
+      },
+    ],
+
+  selecteditem: 0,
+  }),
+};
+</script>

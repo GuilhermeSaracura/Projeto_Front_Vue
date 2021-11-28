@@ -66,12 +66,12 @@ export default {
       {
         title:"Candies",
         url:"/Candies",
-        icon:"mdi-cake",
+        icon:"mdi-cake-variant",
       },
       {
         title:"Juice",
         url:"/Juice",
-        icon:"mdi-water",
+        icon:"mdi-cup",
       },
     ],
 
