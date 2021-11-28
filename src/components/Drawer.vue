@@ -59,8 +59,8 @@ export default {
         icon:"mdi-home",
       },
       {
-        title:"Savory",
-        url:"/Savory",
+        title:"Dishes",
+        url:"/Dishes",
         icon:"mdi-pizza",
       },
       {
@@ -69,8 +69,8 @@ export default {
         icon:"mdi-cake-variant",
       },
       {
-        title:"Juice",
-        url:"/Juice",
+        title:"Juices",
+        url:"/Juices",
         icon:"mdi-cup",
       },
     ],

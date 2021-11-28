@@ -1,27 +1,24 @@
 <template>
-    <v-app-bar
+    
+  <v-bottom-navigation
       app
-      fixed
+      background-color=#008000
       color=#32CD32
-      scroll-target="#scrolling-techniques">
-      
-      <v-icon left>mdi-food-apple</v-icon>
-      <v-toolbar-title>Health Foods</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-      <div v-for="item in draweritens" :key="item.title" >
-            <v-btn @click="$router.push(item.url)"
-            style = "background-color:#008000" 
-            class="white--text">
+      v-model="selectedBottombarItem"
+  >
+            <v-btn v-for="item in draweritens" :key="item.title" @click="$router.push(item.url)"
+            style = "background-color:#ffffff" 
+            class="green--text">
               {{item.title}}
             </v-btn>
-      </div>
-    </v-app-bar>
+  </v-bottom-navigation>
+
 </template>
+
 
 <script>
 export default {
-  name: 'Appbar',
+  name: 'Bottom',
 
   components:{
   },

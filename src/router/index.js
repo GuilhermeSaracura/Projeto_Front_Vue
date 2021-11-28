@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Savory from '../views/Savory.vue'
+import Dishes from '../views/Dishes.vue'
 import Candies from '../views/Candies.vue'
-import Juice from '../views/Juice.vue'
+import Juices from '../views/Juices.vue'
 
 Vue.use(VueRouter)
 
@@ -14,9 +14,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/Savory',
-    name: 'Savory',
-    component: Savory
+    path: '/Dishes',
+    name: 'Dishes',
+    component: Dishes
   },
   {
     path:'/Candies',
@@ -24,9 +24,9 @@ const routes = [
     component: Candies
   },
   {
-    path:'/Juice',
-    name:'Juice',
-    component: Juice
+    path:'/Juices',
+    name:'Juices',
+    component: Juices
   }
 ]
 
