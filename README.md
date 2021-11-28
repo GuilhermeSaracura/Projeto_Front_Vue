@@ -1,7 +1,7 @@
 # avaliacao
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/70351782/142748490-30cec5c5-5fa3-40b8-b14b-30a010f0f57a.png" width="100%">
+<img src="https://user-images.githubusercontent.com/70351782/143779344-959e1f80-1d6b-40d3-8c8c-8f165553d4ae.png" width="100%">
 </p>
 
 ## Project setup
