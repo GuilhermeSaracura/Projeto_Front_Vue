@@ -1,13 +1,8 @@
 <template>
-    <v-card  style="text-align: center"
-    outlined color="green garken-2">
+    <v-card id="c" outlined color="green garken-2">
         <v-card-title style="color: white" class="justify-center">
             {{food.name}}
         </v-card-title>
-        <v-img
-        contain
-        :src="require(`../assets/img/${food.image}`)"
-        height="250px"></v-img>
         <br/>
         <div>
             <v-btn style = "background-color:#008000"
@@ -18,7 +13,7 @@
         <br/>
         <p
         class="texto"
-        >{{food.description}}</p>
+        >{{food.descrição}}</p>
         
     </v-card>
 </template>
@@ -37,6 +32,9 @@ export default {
  justify-self: center;
  margin-left: 5%;
  margin-right: 5%;
- 
+}
+
+#c{
+    text-align: center;
 }
 </style>

@@ -3,7 +3,7 @@
       <v-col cols="12">
         <h1 style="color:#32CD32">Juices</h1>
         <v-row>
-          <v-col v-for="food in foods" :key="food.name" cols="4">
+          <v-col v-for="food in this.$store.getters.getListJuices" :key="food.name" cols="4">
             <Modelcard :food="food"></Modelcard>
           </v-col>
         </v-row>
@@ -18,11 +18,6 @@ export default {
     name: 'Juices',
     components: {
       Modelcard
-    },
-    computed: {
-      foods(){
-        return this.$store.state.foods.filter((food)=> food.type =="Juices");
-      },
     },
   };
 </script>

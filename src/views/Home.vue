@@ -3,7 +3,7 @@
       <v-col cols="12">
         <h1 style="color:#32CD32">Home</h1>
         <v-row>
-          <v-col v-for="food in foods" :key="food.name" cols="4">
+          <v-col v-for="food in this.$store.getters.getFullList" :key="food.name" cols="4">
             <Modelcard :food="food"></Modelcard>
           </v-col>
         </v-row>
@@ -12,17 +12,20 @@
 </template>
 
 <script>
-import Modelcard from "../components/Modelcard.vue";
-
+import Modelcard from "@/components/Modelcard.vue";
 export default {
     name: 'Home',
     components: {
       Modelcard
     },
-    computed: {
-      foods(){
-        return this.$store.state.foods;
-      },
+  data(){
+    return{
+      }
     },
+  methods:{
+    },
+  async created(){
+    await this.$store.dispatch('fetchFoods')
+  }
   };
 </script>

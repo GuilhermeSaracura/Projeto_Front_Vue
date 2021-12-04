@@ -26,7 +26,6 @@ import Drawer from "@/components/Drawer"
 import Systembar from "@/components/Systembar"
 import Footer from "@/components/Footer"
 import Bottom from "@/components/Bottom"
-import axios from "axios"
 export default {
   name: 'App',
   components:{
@@ -39,6 +38,9 @@ export default {
 
   data: () => ({
   }),
+  async created(){
+    await this.$store.dispatch('fetchFoods')
+  }
 };
 </script>
 
