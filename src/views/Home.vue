@@ -24,8 +24,5 @@ export default {
     },
   methods:{
     },
-  async created(){
-    await this.$store.dispatch('fetchFoods')
-  }
   };
 </script>

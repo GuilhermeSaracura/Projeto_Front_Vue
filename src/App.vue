@@ -38,8 +38,8 @@ export default {
 
   data: () => ({
   }),
-  async created(){
-    await this.$store.dispatch('fetchFoods')
+  created(){
+    this.$store.dispatch('fetchFoods')
   }
 };
 </script>

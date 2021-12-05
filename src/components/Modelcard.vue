@@ -3,6 +3,11 @@
         <v-card-title style="color: white" class="justify-center">
             {{food.name}}
         </v-card-title>
+        <br/> <v-img
+        contain
+        :src="require(`../assets/img/${food.img}`)"
+        height="250px">
+        </v-img>
         <br/>
         <div>
             <v-btn style = "background-color:#008000"
@@ -36,5 +41,6 @@ export default {
 
 #c{
     text-align: center;
+    height: 600px;
 }
 </style>
