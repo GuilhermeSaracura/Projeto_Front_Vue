@@ -12,9 +12,7 @@ export default new Vuex.Store({
     setFoods(state,lfoods){
       state.foods=lfoods
     }
-
   },
-
   getters:{
     getFullList(state){
       return state.foods
@@ -29,7 +27,6 @@ export default new Vuex.Store({
       return state.foods.filter((food)=> food.type=="Juices")
     }
   },
-
   actions: {
     fetchFoods({commit}){
       axios.get('https://afwdapiweb.herokuapp.com/Foods/').then(res=>{const lfoods=res.data
